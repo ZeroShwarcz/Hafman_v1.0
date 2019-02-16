@@ -1,0 +1,25 @@
+vim .vimrc
+{
+syntax on
+set number
+set expandtab
+set tabstop = (размер таба в пробелах)
+
+
+set hlsearch(подсветка поиска)
+set incsearch
+"mappings
+map <C-n> :NERDTreeToggle<CR>
+}
+
+
+/поиск(n перемещение)
+слово + '*' будет искаться это слово
+e ~/ переход в другой файл или только в кофиг, надо затестить
+
+vim-plug: https://github.com/junegunn/vim-plug(оставить только нердтрии)
+{
+:source ~/.vimrc(перечитать файл)
+:PlugInstall
+}
+gruvbox: https://github.com/morhetz/gruvbox(подсветка синтаксиса)
